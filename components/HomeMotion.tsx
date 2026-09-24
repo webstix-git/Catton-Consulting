@@ -4,26 +4,10 @@ import { useEffect } from "react";
 
 export function HomeMotion() {
   useEffect(() => {
-    const nav = document.getElementById("nav");
-    const menuBtn = document.getElementById("menuBtn");
     const form = document.getElementById("form");
     const year = document.getElementById("yr");
     const parallax = document.getElementById("parallax");
-    if (!nav || !menuBtn || !form || !year) return;
-
-    const onScroll = () => nav.classList.toggle("scrolled", window.scrollY > 30);
-    window.addEventListener("scroll", onScroll, { passive: true });
-    onScroll();
-
-    const onMenu = () => {
-      const open = nav.classList.toggle("open");
-      menuBtn.setAttribute("aria-expanded", String(open));
-    };
-    menuBtn.addEventListener("click", onMenu);
-
-    const links = Array.from(nav.querySelectorAll("ul a"));
-    const close = () => nav.classList.remove("open");
-    links.forEach((link) => link.addEventListener("click", close));
+    if (!form || !year) return;
 
     const io = new IntersectionObserver(
       (entries) => {
@@ -69,10 +53,7 @@ export function HomeMotion() {
     year.textContent = String(new Date().getFullYear());
 
     return () => {
-      window.removeEventListener("scroll", onScroll);
       window.removeEventListener("scroll", onParallax);
-      menuBtn.removeEventListener("click", onMenu);
-      links.forEach((link) => link.removeEventListener("click", close));
       form.removeEventListener("submit", onSubmit);
       io.disconnect();
     };

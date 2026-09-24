@@ -13,7 +13,6 @@ export default function AiPolicyPage() {
       title="AI Policy"
       lede="Our principles for using artificial intelligence carefully, transparently and with human accountability."
       ledeWidth={650}
-      current="ai"
     >
       <section>
         <h2>Our approach</h2>

@@ -1,31 +1,12 @@
-import Link from "next/link";
 import { HomeMotion } from "@/components/HomeMotion";
+import { SiteFooter } from "@/components/SiteFooter";
+import { SiteHeader } from "@/components/SiteHeader";
 
 export function HomePage() {
   return (
     <div className="home">
       <HomeMotion />
-      <header className="nav" id="nav">
-        <div className="wrap">
-          <a href="#top" className="logo" aria-label="Catton Consulting home">
-            Catton <span>Consulting</span>
-          </a>
-          <nav aria-label="Primary">
-            <ul>
-              <li><a href="#top" className="is-current">Home</a></li>
-              <li><a href="#services">Services</a></li>
-              <li><a href="#approach">Approach</a></li>
-              <li><a href="#outcomes">Why Catton</a></li>
-              <li><a href="#faq">FAQs</a></li>
-            </ul>
-          </nav>
-          <a className="nav-phone" href="tel:+15074983086" aria-label="Call 507-498-3086">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.69 2.8a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.33 1.85.56 2.81.69A2 2 0 0 1 22 16.92z" /></svg>
-            507-498-3086
-          </a>
-          <button className="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
-        </div>
-      </header>
+      <SiteHeader home />
 
       <main id="top">
         <section className="hero">
@@ -276,48 +257,7 @@ export function HomePage() {
         </section>
       </main>
 
-      <footer>
-        <div className="wrap">
-          <div className="foot-top">
-            <div>
-              <a href="#top" className="logo">Catton <span>Consulting</span></a>
-              <p style={{ marginTop: 16, maxWidth: "26em" }}>Bookkeeping, payroll and financial reporting that lets business owners focus on growth.</p>
-            </div>
-            <div>
-              <h4>Services</h4>
-              <ul>
-                <li><a href="#services">Financial statements</a></li>
-                <li><a href="#services">AP &amp; AR</a></li>
-                <li><a href="#services">Reconciliations</a></li>
-                <li><a href="#services">Payroll &amp; taxes</a></li>
-                <li><a href="#services">Sales tax</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4>Company</h4>
-              <ul>
-                <li><a href="#approach">Approach</a></li>
-                <li><a href="#outcomes">Why Catton</a></li>
-                <li><a href="#faq">FAQs</a></li>
-                <li><a href="#contact">Contact</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4>Contact</h4>
-              <ul className="footer-contact">
-                <li><a href="https://www.google.com/maps/search/?api=1&query=18666+County+Road+4%2C+Spring+Grove%2C+MN+55974" target="_blank" rel="noopener" aria-label="Open office address in Google Maps"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0z" /><circle cx="12" cy="10" r="2.5" /></svg><address>18666 County Road 4<br />Spring Grove, MN 55974</address></a></li>
-                <li><a href="tel:+15074983086" aria-label="Call office 507-498-3086"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.7a15 15 0 0 0 4.8 4.8L15 13l5 2v4c0 .6-.4 1-1 1C10.7 20 4 13.3 4 5c0-.6.4-1 1-1z" /></svg><span>507-498-3086</span></a></li>
-                <li><a href="tel:+16128657443" aria-label="Call mobile 612-865-7443"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2" /><path d="M10 5h4M11 18h2" /></svg><span>612-865-7443</span></a></li>
-                <li><a href="mailto:lisa@catton.com" aria-label="Email lisa@catton.com"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" /><path d="m3 7 9 6 9-6" /></svg><span>lisa@catton.com</span></a></li>
-              </ul>
-            </div>
-          </div>
-          <div className="foot-bot">
-            <p className="copyline">© <span id="yr">2026</span> Catton Consulting. All rights reserved. <span className="sep">|</span> <Link href="/ai-policy">AI Policy</Link> <span className="sep">|</span> <Link href="/privacy-policy">Privacy Policy</Link></p>
-            <p className="design-credit">Website Design by <a href="https://www.webstix.com/" target="_blank" rel="noopener" aria-label="Webstix"><span className="webstix-mark"><img src="/assets/webstix-logo.png" alt="Webstix" /></span></a></p>
-          </div>
-        </div>
-      </footer>
+      <SiteFooter home />
     </div>
   );
 }

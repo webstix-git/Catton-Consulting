@@ -1,37 +1,21 @@
-import Link from "next/link";
 import type { ReactNode } from "react";
+import { SiteFooter } from "@/components/SiteFooter";
+import { SiteHeader } from "@/components/SiteHeader";
 
 type PolicyLayoutProps = {
   eyebrow: string;
   title: string;
   lede: string;
   ledeWidth: number;
-  current: "privacy" | "ai";
   children: ReactNode;
 };
 
-export function PolicyLayout({
-  eyebrow,
-  title,
-  lede,
-  ledeWidth,
-  current,
-  children,
-}: PolicyLayoutProps) {
+export function PolicyLayout({ eyebrow, title, lede, ledeWidth, children }: PolicyLayoutProps) {
   return (
-    <div className="policy-page">
-      <header className="nav">
-        <div className="wrap">
-          <Link className="logo" href="/">
-            Catton Consulting
-          </Link>
-          <Link className="back" href="/">
-            Back to website
-          </Link>
-        </div>
-      </header>
-      <main>
-        <section className="hero">
+    <div className="home">
+      <SiteHeader />
+      <main className="policy-page">
+        <section className="policy-hero">
           <div className="wrap">
             <span className="eyebrow">{eyebrow}</span>
             <h1>{title}</h1>
@@ -47,19 +31,7 @@ export function PolicyLayout({
           </div>
         </div>
       </main>
-      <footer>
-        <div className="wrap foot">
-          <span>© 2026 Catton Consulting. All rights reserved.</span>
-          <span className="foot-links">
-            <Link href="/privacy-policy" aria-current={current === "privacy" ? "page" : undefined}>
-              Privacy Policy
-            </Link>
-            <Link href="/ai-policy" aria-current={current === "ai" ? "page" : undefined}>
-              AI Policy
-            </Link>
-          </span>
-        </div>
-      </footer>
+      <SiteFooter />
     </div>
   );
 }

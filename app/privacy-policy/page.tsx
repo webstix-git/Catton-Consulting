@@ -13,7 +13,6 @@ export default function PrivacyPolicyPage() {
       title="Privacy Policy"
       lede="How Catton Consulting handles the personal information you share with us."
       ledeWidth={620}
-      current="privacy"
     >
       <section>
         <h2>Overview</h2>
