@@ -12,15 +12,16 @@ export function HomePage() {
           </a>
           <nav aria-label="Primary">
             <ul>
+              <li><a href="#top" className="is-current">Home</a></li>
               <li><a href="#services">Services</a></li>
               <li><a href="#approach">Approach</a></li>
               <li><a href="#outcomes">Why Catton</a></li>
-              <li><a href="#faq">FAQ</a></li>
+              <li><a href="#faq">FAQs</a></li>
             </ul>
           </nav>
-          <a href="#contact" className="btn btn-primary">
+          <a className="nav-phone" href="tel:+15074983086" aria-label="Call 507-498-3086">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.69 2.8a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.33 1.85.56 2.81.69A2 2 0 0 1 22 16.92z" /></svg>
-            Book a Consultation
+            507-498-3086
           </a>
           <button className="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
         </div>
@@ -28,33 +29,20 @@ export function HomePage() {
 
       <main id="top">
         <section className="hero">
+          <div className="hero-photo">
+            <img src="/assets/hero-banner.jpg" alt="Financial professional working at her desk" />
+          </div>
           <div className="wrap">
-            <div className="hero-grid">
-              <div className="hero-copy">
-                <span className="eyebrow rv">Bookkeeping · Payroll · Financial reporting</span>
-                <h1 className="display rv in-lines">
-                  <span className="line-mask"><span>Bank-Ready Books.</span></span>
-                  <span className="line-mask"><span>Room to <em className="serif">Lead.</em></span></span>
-                </h1>
-                <p className="lede rv d1">Catton Consulting takes the daily weight of accounting off your desk, so you can put your energy where you&apos;re strongest: creating, innovating and growing your business.</p>
-                <div className="actions rv d2">
-                  <a href="#contact" className="btn btn-primary">
-                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.69 2.8a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.33 1.85.56 2.81.69A2 2 0 0 1 22 16.92z" /></svg>
-                    Book a Consultation
-                  </a>
-                  <a href="#services" className="btn btn-ghost">Explore services</a>
-                </div>
-              </div>
-              <div className="hero-media rv d2">
-                <div className="img">
-                  <img src="/assets/hero-finance-analyst.jpg" alt="Financial analyst reviewing charts at her desk" />
-                </div>
-                <div className="ledger-chip" aria-hidden="true">
-                  <div className="t"><span>Month-end close</span><span>●</span></div>
-                  <div className="row"><span>Bank reconciliation</span><span className="ok">Done</span></div>
-                  <div className="row"><span>Payroll &amp; taxes</span><span className="ok">Filed</span></div>
-                  <div className="row"><span>P&amp;L · Balance sheet</span><span className="ok">Ready</span></div>
-                </div>
+            <div className="hero-copy">
+              <span className="hero-kicker rv">Spring Grove, Minnesota</span>
+              <h1 className="display rv in-lines">
+                <span className="line-mask"><span>Focus on Growing</span></span>
+                <span className="line-mask"><span>Your Business.</span></span>
+                <span className="line-mask"><span className="hero-gold">We&apos;ll Handle the Rest.</span></span>
+              </h1>
+              <p className="hero-lede rv d1">Catton Consulting takes the daily weight of accounting off your desk, so you can put your energy where you&apos;re strongest: creating, innovating and growing your business.</p>
+              <div className="actions rv d2">
+                <a href="#services" className="btn btn-gold">See our services <span className="arr" aria-hidden="true">→</span></a>
               </div>
             </div>
           </div>
@@ -310,7 +298,7 @@ export function HomePage() {
               <ul>
                 <li><a href="#approach">Approach</a></li>
                 <li><a href="#outcomes">Why Catton</a></li>
-                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#faq">FAQs</a></li>
                 <li><a href="#contact">Contact</a></li>
               </ul>
             </div>
