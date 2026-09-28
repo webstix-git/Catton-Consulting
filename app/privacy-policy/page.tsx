@@ -90,7 +90,7 @@ export default function PrivacyPolicyPage() {
         <h2>Contact us</h2>
         <p>
           For privacy questions or requests, email <a href="mailto:lisa@catton.com">lisa@catton.com</a> or call{" "}
-          <a href="tel:+15074983086">507-498-3086</a>.
+          <a href="tel:+16128657443">612-865-7443</a>.
         </p>
       </section>
     </PolicyLayout>

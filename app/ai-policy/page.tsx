@@ -78,7 +78,7 @@ export default function AiPolicyPage() {
         <h2>Questions</h2>
         <p>
           For questions about this policy or our use of AI, email <a href="mailto:lisa@catton.com">lisa@catton.com</a>{" "}
-          or call <a href="tel:+15074983086">507-498-3086</a>.
+          or call <a href="tel:+16128657443">612-865-7443</a>.
         </p>
       </section>
     </PolicyLayout>

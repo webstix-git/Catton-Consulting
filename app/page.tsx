@@ -12,7 +12,7 @@ const jsonLd = {
   name: "Catton Consulting",
   url: "https://catton.com/",
   email: "lisa@catton.com",
-  telephone: "+1-507-498-3086",
+  telephone: "+1-612-865-7443",
   address: {
     "@type": "PostalAddress",
     streetAddress: "18666 County Road 4",
