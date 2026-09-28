@@ -102,7 +102,7 @@ export function HomePage() {
 
         <section className="dark cta" id="contact" aria-labelledby="ct-h">
           <div className="cta-photo" aria-hidden="true">
-            <img src="/assets/catton-modern-office.jpg" alt="" />
+            <img src="/assets/catton-team-collaboration.jpg" alt="" />
           </div>
           <div className="wrap cta-grid">
             <div className="rv">
