@@ -21,14 +21,13 @@ export function SiteFooter({ home = false }: SiteFooterProps) {
               <li><a href={to("#services")}>Financial statements</a></li>
               <li><a href={to("#services")}>AP &amp; AR</a></li>
               <li><a href={to("#services")}>Reconciliations</a></li>
-              <li><a href={to("#services")}>Payroll &amp; taxes</a></li>
-              <li><a href={to("#services")}>Sales tax</a></li>
             </ul>
           </div>
           <div>
-            <h4>Company</h4>
+            <h4 className="foot-label-spacer" aria-hidden="true">Services</h4>
             <ul>
-              <li><a href={to("#contact")}>Contact</a></li>
+              <li><a href={to("#services")}>Payroll &amp; taxes</a></li>
+              <li><a href={to("#services")}>Sales tax</a></li>
             </ul>
           </div>
           <div>

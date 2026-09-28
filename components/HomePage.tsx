@@ -101,31 +101,18 @@ export function HomePage() {
         </section>
 
         <section className="dark cta" id="contact" aria-labelledby="ct-h">
+          <div className="cta-photo" aria-hidden="true">
+            <img src="/assets/catton-modern-office.jpg" alt="" />
+          </div>
           <div className="wrap cta-grid">
             <div className="rv">
               <span className="eyebrow">Let&apos;s talk</span>
               <h2 className="display" id="ct-h"><span className="heading-line">Focus on What</span><span className="heading-line"><em>Only You</em> Can Do.</span></h2>
               <p className="l">Tell us a little about your business with a no-pressure consultation.</p>
-              <div className="contact-lines" aria-label="Contact details">
-                <div className="contact-item">
-                  <a className="contact-link" href="tel:+16128657443" aria-label="Call 612-865-7443">
-                    <svg className="contact-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="2" /><path d="M10 18h4" /></svg>
-                    <span className="contact-value">612-865-7443</span>
-                  </a>
-                </div>
-                <div className="contact-item">
-                  <a className="contact-link" href="mailto:lisa@catton.com" aria-label="Email lisa@catton.com">
-                    <svg className="contact-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" /><path d="m3 7 9 6 9-6" /></svg>
-                    <span className="contact-value">lisa@catton.com</span>
-                  </a>
-                </div>
-                <div className="contact-item">
-                  <a className="contact-link" href="https://www.google.com/maps/search/?api=1&query=18666+County+Road+4%2C+Spring+Grove%2C+MN+55974" target="_blank" rel="noopener" aria-label="Open office address in Google Maps">
-                    <svg className="contact-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0z" /><circle cx="12" cy="10" r="2.5" /></svg>
-                    <address className="contact-value">18666 County Road 4<br />Spring Grove, MN 55974</address>
-                  </a>
-                </div>
-              </div>
+              <a className="btn btn-gold" href="tel:+16128657443">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.69 2.8a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.33 1.85.56 2.81.69A2 2 0 0 1 22 16.92z" /></svg>
+                612-865-7443
+              </a>
             </div>
           </div>
         </section>
