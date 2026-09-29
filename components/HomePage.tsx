@@ -97,28 +97,16 @@ export function HomePage() {
                 </div>
               </article>
             </div>
-          </div>
-        </section>
-
-        <section className="dark cta" id="contact" aria-labelledby="ct-h">
-          <div className="cta-photo" aria-hidden="true">
-            <img src="/assets/catton-team-collaboration.jpg" alt="" />
-          </div>
-          <div className="wrap cta-grid">
-            <div className="rv">
+            <div className="services-close rv">
               <span className="eyebrow">Let&apos;s talk</span>
-              <h2 className="display" id="ct-h"><span className="heading-line">Focus on What</span><span className="heading-line"><em>Only You</em> Can Do.</span></h2>
-              <p className="l">Tell us a little about your business with a no-pressure consultation.</p>
-              <a className="btn btn-gold" href="tel:+16128657443">
-                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.69 2.8a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.33 1.85.56 2.81.69A2 2 0 0 1 22 16.92z" /></svg>
-                612-865-7443
-              </a>
+              <h2 className="h2"><span className="heading-line">Focus on What</span><span className="heading-line"><em>Only You</em> Can Do.</span></h2>
+              <p>Tell us a little about your business with a no-pressure consultation.</p>
             </div>
           </div>
         </section>
       </main>
 
-      <SiteFooter home />
+      <SiteFooter />
     </div>
   );
 }

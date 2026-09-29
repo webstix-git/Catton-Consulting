@@ -126,6 +126,10 @@ header.nav.scrolled .menu-btn{border-color:var(--line)}
 .service-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
 .service-tags span{padding:7px 11px;border:1px solid var(--line);border-radius:var(--r-pill);color:var(--ink-muted);font-size:11px;font-weight:650;letter-spacing:.04em}
 .service-line:first-child .service-tags span{background:rgba(220,179,106,.2);border-color:rgba(168,116,42,.42);color:var(--brass-text);font-weight:750}
+.services-close{max-width:760px;margin-top:18px}
+.services-close h2{margin-top:18px}
+.services-close h2 em{color:var(--brass-text);font-style:normal}
+.services-close p{color:var(--ink-muted);font-size:18px;line-height:1.6;margin-top:18px;max-width:36em}
 
 /* business outcome image section */
 .bleed{position:relative;min-height:760px;display:flex;align-items:center;color:var(--ink);overflow:hidden;background:var(--paper-2)}

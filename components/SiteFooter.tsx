@@ -1,35 +1,8 @@
-import Link from "next/link";
-
-type SiteFooterProps = {
-  home?: boolean;
-};
-
-export function SiteFooter({ home = false }: SiteFooterProps) {
-  const to = (hash: string) => (home ? hash : `/${hash}`);
-
+export function SiteFooter() {
   return (
     <footer>
       <div className="wrap">
         <div className="foot-top">
-          <div>
-            <a href={home ? "#top" : "/"} className="logo">Catton <span>Consulting</span></a>
-            <p style={{ marginTop: 16, maxWidth: "26em" }}>Bookkeeping, payroll and financial reporting that lets business owners focus on growth.</p>
-          </div>
-          <div>
-            <h4>Services</h4>
-            <ul>
-              <li><a href={to("#services")}>Financial statements</a></li>
-              <li><a href={to("#services")}>AP &amp; AR</a></li>
-              <li><a href={to("#services")}>Reconciliations</a></li>
-            </ul>
-          </div>
-          <div>
-            <h4 className="foot-label-spacer" aria-hidden="true">Services</h4>
-            <ul>
-              <li><a href={to("#services")}>Payroll &amp; taxes</a></li>
-              <li><a href={to("#services")}>Sales tax</a></li>
-            </ul>
-          </div>
           <div>
             <h4>Contact</h4>
             <ul className="footer-contact">
@@ -40,7 +13,7 @@ export function SiteFooter({ home = false }: SiteFooterProps) {
           </div>
         </div>
         <div className="foot-bot">
-          <p className="copyline">© <span id="yr">{new Date().getFullYear()}</span> Catton Consulting. All rights reserved. <span className="sep">|</span> <Link href="/ai-policy">AI Policy</Link> <span className="sep">|</span> <Link href="/privacy-policy">Privacy Policy</Link></p>
+          <p className="copyline">© <span id="yr">{new Date().getFullYear()}</span> Catton Consulting. All rights reserved.</p>
           <p className="design-credit">Website Design by <a href="https://www.webstix.com/" target="_blank" rel="noopener" aria-label="Webstix"><span className="webstix-mark"><img src="/assets/webstix-logo.png" alt="Webstix" /></span></a></p>
         </div>
       </div>
