@@ -8,10 +8,10 @@ export function HomePage() {
       <HomeMotion />
       <SiteHeader home />
 
-      <main id="top">
-        <section className="hero">
+      <main id="main-content">
+        <section className="hero" id="top">
           <div className="hero-photo">
-            <img src="/assets/hero-banner.jpg" alt="Financial professional working at her desk" />
+            <img src="/assets/hero-banner.jpg" alt="Financial professional working at her desk" loading="eager" fetchPriority="high" decoding="async" />
           </div>
           <div className="wrap">
             <div className="hero-copy">
@@ -23,7 +23,7 @@ export function HomePage() {
               </h1>
               <p className="hero-lede rv d1">Catton Consulting takes the daily weight of accounting off your desk, so you can put your energy where you&apos;re strongest: creating, innovating and growing your business.</p>
               <div className="actions rv d2">
-                <a href="#services" className="btn btn-gold">See our services <span className="arr" aria-hidden="true">→</span></a>
+                <a href="#services" className="btn btn-gold">See our services <span className="arr" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" /></svg></span></a>
               </div>
             </div>
           </div>
@@ -57,7 +57,7 @@ export function HomePage() {
             </div>
             <div className="service-list">
               <article className="service-line rv">
-                <span className="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 2h9l3 3v17H6z" /><path d="M14 2v4h4M9 11h6M9 15h6M9 19h4" /></svg></span>
+                <span className="service-icon" aria-hidden="true"><img src="/assets/service-income-statement.png" alt="" loading="lazy" decoding="async" /></span>
                 <div className="service-line-content">
                   <div className="service-line-head"><h3>Financial Statement Preparation</h3><span className="service-category">Core reporting</span></div>
                   <p>Income statements, profit and loss reports and balance sheets prepared accurately and on time. Clear, bank-ready financials help you secure funding, plan ahead and make confident decisions.</p>
@@ -65,7 +65,7 @@ export function HomePage() {
                 </div>
               </article>
               <article className="service-line rv d1">
-                <span className="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 5h16v14H4zM7 9h6M7 13h10M7 17h7" /><path d="m16 7 2 2 3-3" /></svg></span>
+                <span className="service-icon" aria-hidden="true"><img src="/assets/service-accounts-payable.png" alt="" loading="lazy" decoding="async" /></span>
                 <div className="service-line-content">
                   <div className="service-line-head"><h3>Accounts Payable and Receivable</h3><span className="service-category">Cash flow</span></div>
                   <p>Bills paid on schedule, invoices sent and followed up. We manage both sides of your cash flow so vendors stay happy and money owed to you arrives.</p>
@@ -73,7 +73,7 @@ export function HomePage() {
                 </div>
               </article>
               <article className="service-line rv d2">
-                <span className="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 17h16M7 4v6M17 14v6" /><circle cx="7" cy="15" r="2" /><circle cx="17" cy="9" r="2" /></svg></span>
+                <span className="service-icon" aria-hidden="true"><img src="/assets/service-accuracy.png" alt="" loading="lazy" decoding="async" /></span>
                 <div className="service-line-content">
                   <div className="service-line-head"><h3>Bank and Credit Card Reconciliations</h3><span className="service-category">Accuracy</span></div>
                   <p>Every account matched to the penny, every month. Reconciliations catch errors, duplicate charges and discrepancies long before they become problems.</p>
@@ -81,7 +81,7 @@ export function HomePage() {
                 </div>
               </article>
               <article className="service-line rv">
-                <span className="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3" /><path d="M3.5 19a5.5 5.5 0 0 1 11 0M16 8h5M18.5 5.5v5" /></svg></span>
+                <span className="service-icon" aria-hidden="true"><img src="/assets/service-people.png" alt="" loading="lazy" decoding="async" /></span>
                 <div className="service-line-content">
                   <div className="service-line-head"><h3>Payroll Processing and Payroll Taxes</h3><span className="service-category">People</span></div>
                   <p>Your team paid correctly and on time, with payroll taxes calculated, withheld and remitted. One less deadline for you to track.</p>
@@ -89,7 +89,7 @@ export function HomePage() {
                 </div>
               </article>
               <article className="service-line rv d1">
-                <span className="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 2h12v20l-3-2-3 2-3-2-3 2z" /><path d="M9 7h6M9 11h6M9 15h4" /></svg></span>
+                <span className="service-icon" aria-hidden="true"><img src="/assets/service-compliance.png" alt="" loading="lazy" decoding="async" /></span>
                 <div className="service-line-content">
                   <div className="service-line-head"><h3>Sales Tax Payment Processing</h3><span className="service-category">Compliance</span></div>
                   <p>Sales tax tracked, prepared and paid on schedule, so you stay compliant without the last-minute scramble.</p>
@@ -102,13 +102,13 @@ export function HomePage() {
 
         <section className="dark cta" id="contact" aria-labelledby="ct-h">
           <div className="cta-photo" aria-hidden="true">
-            <img src="/assets/catton-team-collaboration.jpg" alt="" />
+            <img src="/assets/catton-team-collaboration.jpg" alt="" loading="lazy" decoding="async" />
           </div>
           <div className="wrap">
             <div className="rv">
               <span className="eyebrow">Let&apos;s talk</span>
               <h2 className="display" id="ct-h"><span className="heading-line">Focus on What</span><span className="heading-line"><em>Only You</em> Can Do.</span></h2>
-              <p className="l">Tell us a little about your business with a no-pressure consultation.</p>
+              <p className="l">Tell us a little about your business. Call or email to start a no-pressure consultation.</p>
             </div>
             <ul className="cta-contacts rv d1">
               <li>

@@ -3,7 +3,9 @@ import { PolicyLayout } from "@/components/PolicyLayout";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
-  description: "Learn how Catton Consulting collects, uses, protects and retains personal information.",
+  alternates: { canonical: "/privacy-policy" },
+  description:
+    "Read Catton Consulting's privacy policy for information collected through the website, email, phone conversations and business communications.",
 };
 
 export default function PrivacyPolicyPage() {
@@ -13,19 +15,21 @@ export default function PrivacyPolicyPage() {
       title="Privacy Policy"
       lede="How Catton Consulting handles the personal information you share with us."
       ledeWidth={620}
+      canonicalPath="/privacy-policy"
     >
       <section>
         <h2>Overview</h2>
         <p>
           Catton Consulting respects your privacy. This policy explains what information we collect through our
-          website and business communications, why we use it, and the choices available to you.
+          website, email, phone conversations and other business communications, why we use it, and the choices
+          available to you.
         </p>
       </section>
       <section>
         <h2>Information we collect</h2>
         <p>
           We may collect information you provide directly, including your name, company, email address, phone
-          number, service interests and any message you submit through our contact form.
+          number, service interests and the details you share when you contact us by email or phone.
         </p>
         <p>
           Our website may also collect limited technical information such as browser type, device type, referring
@@ -89,7 +93,8 @@ export default function PrivacyPolicyPage() {
       <section>
         <h2>Contact us</h2>
         <p>
-          For privacy questions or requests, email <a href="mailto:lisa@catton.com">lisa@catton.com</a> or call{" "}
+          For privacy questions or requests, contact Catton Consulting at 18666 County Road 4, Spring Grove, MN
+          55974, email <a href="mailto:lisa@catton.com">lisa@catton.com</a> or call{" "}
           <a href="tel:+16128657443">612-865-7443</a>.
         </p>
       </section>

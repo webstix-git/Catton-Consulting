@@ -1,20 +1,9 @@
 import type { Metadata } from "next";
-import { Instrument_Sans, Manrope } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
-const instrumentSans = Instrument_Sans({
-  subsets: ["latin"],
-  display: "swap",
-  variable: "--font-instrument",
-});
-
-const manrope = Manrope({
-  subsets: ["latin"],
-  display: "swap",
-  variable: "--font-manrope",
-});
-
 export const metadata: Metadata = {
+  metadataBase: new URL("https://catton.com"),
   title: {
     default: "Catton Consulting | Bookkeeping, Payroll & Financial Reporting",
     template: "%s | Catton Consulting",
@@ -24,9 +13,23 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+  const gtmId = process.env.NEXT_PUBLIC_GTM_ID;
+
   return (
-    <html lang="en" className={`${instrumentSans.variable} ${manrope.variable}`}>
+    <html lang="en">
       <body>{children}</body>
+      {gtmId ? (
+        <>
+          <Script id="google-tag-manager-init" strategy="afterInteractive">
+            {`window.dataLayer = window.dataLayer || []; window.gtag = function(){window.dataLayer.push(arguments);}; window.gtag('js', new Date());`}
+          </Script>
+          <Script
+            id="google-tag-manager"
+            src={`https://www.googletagmanager.com/gtm.js?id=${encodeURIComponent(gtmId)}`}
+            strategy="afterInteractive"
+          />
+        </>
+      ) : null}
     </html>
   );
 }

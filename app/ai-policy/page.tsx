@@ -3,7 +3,9 @@ import { PolicyLayout } from "@/components/PolicyLayout";
 
 export const metadata: Metadata = {
   title: "AI Policy",
-  description: "Catton Consulting's principles for responsible use of artificial intelligence.",
+  alternates: { canonical: "/ai-policy" },
+  description:
+    "Learn how Catton Consulting uses AI with human oversight, accuracy checks, confidentiality safeguards and professional accountability.",
 };
 
 export default function AiPolicyPage() {
@@ -13,6 +15,7 @@ export default function AiPolicyPage() {
       title="AI Policy"
       lede="Our principles for using artificial intelligence carefully, transparently and with human accountability."
       ledeWidth={650}
+      canonicalPath="/ai-policy"
     >
       <section>
         <h2>Our approach</h2>
@@ -77,8 +80,9 @@ export default function AiPolicyPage() {
       <section>
         <h2>Questions</h2>
         <p>
-          For questions about this policy or our use of AI, email <a href="mailto:lisa@catton.com">lisa@catton.com</a>{" "}
-          or call <a href="tel:+16128657443">612-865-7443</a>.
+          For questions about this policy or our use of AI, contact Catton Consulting at 18666 County Road 4, Spring
+          Grove, MN 55974, email <a href="mailto:lisa@catton.com">lisa@catton.com</a> or call{" "}
+          <a href="tel:+16128657443">612-865-7443</a>.
         </p>
       </section>
     </PolicyLayout>
