@@ -47,7 +47,6 @@ export function SiteHeader({ home = false }: SiteHeaderProps) {
           <ul>
             <li><a href={to("#top")} className={home ? "is-current" : undefined} aria-current={home ? "page" : undefined} onClick={() => setOpen(false)}>Home</a></li>
             <li><a href={to("#services")} onClick={() => setOpen(false)}>Services</a></li>
-            <li><a href={home ? "/ai-readiness" : "/ai-readiness"} onClick={() => setOpen(false)}>AI Readiness</a></li>
             <li><a href={to("#contact")} onClick={() => setOpen(false)}>Contact</a></li>
           </ul>
         </nav>
