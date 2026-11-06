@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Accounting Services Index",
   alternates: { canonical: "/service-index" },
   description:
-    "Explore Catton Consulting's bookkeeping, financial reporting, AP/AR, reconciliations, payroll and sales tax services for businesses in Spring Grove, MN.",
+    "Bookkeeping, financial statements, AP/AR, reconciliations, payroll and sales tax support from Catton Consulting in Spring Grove, MN.",
 };
 
 const services = [
