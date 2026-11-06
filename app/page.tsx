@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Bookkeeping Services in Spring Grove, MN",
   alternates: { canonical: "/" },
   description:
-    "Catton Consulting provides bookkeeping, financial statements, accounts payable and receivable, reconciliations, payroll and sales tax support in Spring Grove, MN.",
+    "Catton Consulting provides bookkeeping, financial reporting, AP/AR, reconciliations, payroll and sales tax support in Spring Grove, MN.",
 };
 
 const jsonLd = {

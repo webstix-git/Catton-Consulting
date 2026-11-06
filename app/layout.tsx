@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     template: "%s | Catton Consulting",
   },
   description:
-    "Catton Consulting handles bookkeeping, financial statements, AP/AR, reconciliations, payroll and sales tax so you can focus on the strategic decisions that grow your business.",
+    "Catton Consulting provides bookkeeping, financial reporting, payroll and sales tax support for growing businesses in Spring Grove, MN.",
   verification: {
     google: "ByCp0zZHYo6XTX04OeFX4kmyenWJD9XuA8I-U9SKopU",
   },
